@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Berniaga Gemilang Nusantara</title>
+    
+    <!-- Meta Descriptions -->
+    <meta name="description" content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="PT. Berniaga Gemilang Nusantara, layanan berkualitas, produk terbaik, solusi bisnis">
+
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+
+    <!-- Social Media Metadata (Open Graph) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PT. Berniaga Gemilang Nusantara" />
+    <meta property="og:description" content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda." />
+    <meta property="og:image" content="https://www.berniagagemilang.my.id/images/gambar1.jpeg" />
+    <meta property="og:url" content="https://www.berniagagemilang.my.id/" />
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .highlight {
+        color: #ff5722;
+        font-weight: bold;
+      }
+
+      .curved-rectangle {
+        --c: 100;
+        
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 6/2;
+        background: #ffffff;
+        mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+        clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif; /* Atau 'Roboto' jika kamu pilih font Roboto */
+          font-weight: 400;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Poppins', sans-serif; /* Ganti dengan Roboto jika lebih suka */
+          font-weight: 600; /* Lebih tegas untuk heading */
+      }
+
+      p, a, li, span {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400; /* Regular weight untuk konten teks */
+      }
+
+      button, .btn {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600; /* Telegas untuk tombol dan elemen penting */
+      }
+      .font-poppins {
+          font-family: 'poppins', sans-serif;
+          font-weight: 900; /* Regular weight */
+      }
+    </style>
+
+  </head>
+  <body class="font-sans leading-relaxed">
+    <!-- Navbar -->
+    <header class="bg-white text-white w-full z-50 shadow-md px-6 md:px-20">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+            <a href="/">
+                <img src="/images/logo.png" alt="Logo BGN" class="w-20">
+            </a>
+            </div>
+        
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+              <a href="/" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Home</a>
+              <a href="/peluangbisnis.html" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Peluang Bisnis</a>
+              <a href="/produk.html" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Produk</a>
+              <a href="/daftar.html" class="font-semibold text-yellow-700 font-bold transition duration-200 smooth-scroll">Daftar</a>
+            </div>
+        
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg id="hamburger-icon" class="w-6 h-6" color="black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" color="black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </nav>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="pt-2 pb-4 space-y-2 text-white hidden">
+          <a href="/" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Home</a>
+          <a href="/peluangbisnis.html" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Peluang Bisnis</a>
+          <a href="/produk.html" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Produk</a>
+          <a href="/daftar.html" class="block py-2 px-4 rounded-md font-medium text-yellow-700 font-bold transition duration-200 smooth-scroll">Daftar</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+    class="bg-cover bg-center pt-20 pb-28 relative flex items-center justify-center px-6 md:px-10"
+    style="background-image: url(/images/hero.jpg)"
+    >
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-yellow-500 to-yellow-300 opacity-80 z-0"></div>
+    <div class="flex flex-col items-center text-center text-white" data-aos="fade-up">
+        <h1
+        class="uppercase text-5xl md:text-6xl font-poppins tracking-wider mt-4 drop-shadow-lg"
+        data-aos="fade-up"
+        >
+        Wujudkan Impian Anda dengan BGN CORP
+        </h1>
+        <p class="mt-4 text-xl text-justify md:text-center">
+        PT.BGN membuka kesempatan luar biasa untuk Anda yang ingin berkembang bersama bisnis yang modern dan menguntungkan. Daftar sekarang dan jadilah bagian dari komunitas kami untuk meraih kesuksesan finansial!
+        </p>
+    </div>
+    </section>
+
+    <!-- Shape -->
+    <section class="relative h-0">
+     <div class="curved-rectangle"></div>
+    </section>
+
+    <!-- Form -->
+    <section class="bg-white py-20 px-6 md:px-20">
+    <div class="max-w-3xl mx-auto bg-gray-50 rounded-3xl shadow-lg p-10" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-8 text-gray-800 text-center">
+        Daftar Menjadi Mitra BGN CORP
+        </h2>
+
+        <form id="daftarForm" class="space-y-6">
+        <div>
+            <label for="nama" class="block mb-2 font-semibold text-gray-700">Nama Lengkap</label>
+            <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama lengkap Anda"
+            required
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"
+            />
+        </div>
+
+        <div>
+            <label for="email" class="block mb-2 font-semibold text-gray-700">Email</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan email Anda"
+            required
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"
+            />
+        </div>
+
+        <div>
+            <label for="kota" class="block mb-2 font-semibold text-gray-700">Kota</label>
+            <input
+            type="text"
+            id="kota"
+            name="kota"
+            placeholder="Masukkan kota tempat tinggal Anda"
+            required
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"
+            />
+        </div>
+
+        <div>
+            <label for="whatsapp" class="block mb-2 font-semibold text-gray-700">No WhatsApp</label>
+            <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="Contoh: 08123456789"
+            pattern="^\d{9,15}$"
+            required
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"
+            />
+            <p class="mt-1 text-sm text-gray-500">Masukkan nomor tanpa tanda + atau spasi</p>
+        </div>
+
+        <fieldset class="space-y-4">
+            <legend class="text-lg font-semibold text-gray-800 mb-2">Pilihan Paket Lisensi:</legend>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+            <input type="radio" name="paket" value="Paket BASIC GOLD : 1 Lisensi (Rp. 1.850.000)" class="form-radio text-yellow-500" required />
+            <span>
+                <strong>Paket BASIC GOLD</strong> : 1 Lisensi (Rp. 1.850.000)
+            </span>
+            </label>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+            <input type="radio" name="paket" value="Paket BASIC DIAMOND : 1 Lisensi (Rp. 2.850.000)" class="form-radio text-yellow-500" />
+            <span>
+                <strong>Paket BASIC DIAMOND</strong> : 1 Lisensi (Rp. 2.850.000)
+            </span>
+            </label>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+            <input type="radio" name="paket" value="Paket PREMIUM GOLD : 3 Lisensi (Rp. 5.350.000)" class="form-radio text-yellow-500" />
+            <span>
+                <strong>Paket PREMIUM GOLD</strong> : 3 Lisensi (Rp. 5.350.000)
+            </span>
+            </label>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+            <input type="radio" name="paket" value="Paket PREMIUM DIAMOND : 3 Lisensi (Rp. 8.350.000)" class="form-radio text-yellow-500" />
+            <span>
+                <strong>Paket PREMIUM DIAMOND</strong> : 3 Lisensi (Rp. 8.350.000)
+            </span>
+            </label>
+        </fieldset>
+
+        <button
+            type="submit"
+            class="w-full py-4 bg-yellow-500 text-white font-semibold rounded-xl hover:bg-yellow-600 transition duration-200 shadow-md"
+        >
+            Daftar Sekarang
+        </button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">
+        &copy; <span id="current-year"></span> BGN Corp. All rights reserved.
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    // Function to open modal with animation
+    const openModal = (id) => {
+      const modal = document.getElementById(id);
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.add('opacity-100');
+      }, 50);
+    };
+
+    // Function to close modal with animation
+    const closeModal = (id) => {
+      const modal = document.getElementById(id);
+      modal.classList.remove('opacity-100');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    };
+    
+    
+document.getElementById('daftarForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const nama = this.nama.value.trim();
+  const email = this.email.value.trim();
+  const kota = this.kota.value.trim();
+  const whatsappUser = this.whatsapp.value.trim();
+  const paket = this.querySelector('input[name="paket"]:checked')?.value;
+
+  const whatsappNumber = '6283879415745'; // Nomor tujuan
+
+  // Validasi nomor WhatsApp
+  if (!/^\d{9,15}$/.test(whatsappUser)) {
+    alert('Nomor WhatsApp tidak valid. Masukkan hanya angka dengan panjang minimal 9 digit.');
+    return;
+  }
+
+  // Validasi paket
+  if (!paket) {
+    alert('Silakan pilih salah satu paket lisensi.');
+    return;
+  }
+
+  // Susun pesan (multi-baris)
+  const rawMessage = `
+Halo BGN CORP,
+Saya ingin mendaftar menjadi mitra dengan data berikut:
+- Nama: ${nama}
+- Email: ${email}
+- Kota: ${kota}
+- No WhatsApp: ${whatsappUser}
+- Paket Lisensi: ${paket}
+  `;
+
+  const encodedMessage = encodeURIComponent(rawMessage.trim());
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, '_blank');
+});
+    
+      AOS.init();
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          const iconClose = document.getElementById("close-icon");
+          const iconHamburger = document.getElementById("hamburger-icon");
+          menu.classList.toggle("hidden");
+          iconClose.classList.toggle("hidden");
+          iconHamburger.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

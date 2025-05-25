@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Berniaga Gemilang Nusantara</title>
+
+    <!-- Meta Descriptions -->
+    <meta
+      name="description"
+      content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda."
+    />
+
+    <!-- Keywords for SEO -->
+    <meta
+      name="keywords"
+      content="PT. Berniaga Gemilang Nusantara, layanan berkualitas, produk terbaik, solusi bisnis"
+    />
+
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+
+    <!-- Social Media Metadata (Open Graph) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PT. Berniaga Gemilang Nusantara" />
+    <meta
+      property="og:description"
+      content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda."
+    />
+    <meta
+      property="og:image"
+      content="https://www.berniagagemilang.my.id/images/gambar1.jpeg"
+    />
+    <meta property="og:url" content="https://www.berniagagemilang.my.id/" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .highlight {
+        color: #ff5722;
+        font-weight: bold;
+      }
+
+      .curved-rectangle {
+        --c: 100;
+
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 6/2;
+        background: #ffffff;
+        mask: radial-gradient(
+          calc(var(--c) * 1%) 100% at 50% calc(-100% * cos(asin(50 / var(--c)))),
+          #0000 calc(100% - 1px),
+          #000
+        );
+        clip-path: ellipse(calc(var(--c) * 1%) 100% at top);
+      }
+
+      body {
+        font-family: "Poppins", sans-serif; /* Atau 'Roboto' jika kamu pilih font Roboto */
+        font-weight: 400;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", sans-serif; /* Ganti dengan Roboto jika lebih suka */
+        font-weight: 600; /* Lebih tegas untuk heading */
+      }
+
+      p,
+      a,
+      li,
+      span {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400; /* Regular weight untuk konten teks */
+      }
+
+      button,
+      .btn {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600; /* Telegas untuk tombol dan elemen penting */
+      }
+      .font-poppins {
+        font-family: "poppins", sans-serif;
+        font-weight: 900; /* Regular weight */
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="font-sans leading-relaxed">
+    <!-- Navbar -->
+    <header class="bg-white text-white w-full z-50 shadow-md px-6 md:px-20">
+      <nav class="container mx-auto flex justify-between items-center py-4">
+        <!-- Logo -->
+         <div class="flex items-center">
+           <a href="/">
+             <img src="/images/logo.png" alt="Logo BGN" class="w-20">
+           </a>
+         </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a
+            href="/"
+            class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+            >Home</a
+          >
+          <a
+            href="/peluangbisnis.html"
+            class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+            >Peluang Bisnis</a
+          >
+          <a
+            href="/produk.html"
+            class="font-semibold text-yellow-700 font-bold transition duration-200 smooth-scroll"
+            >Produk</a
+          >
+          <a
+            href="/daftar.html"
+            class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+            >Daftar</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden focus:outline-none" id="menu-toggle">
+          <svg
+            id="hamburger-icon"
+            class="w-6 h-6"
+            color="black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+          <svg
+            id="close-icon"
+            class="w-6 h-6 hidden"
+            color="black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="pt-2 pb-4 space-y-2 text-white hidden">
+        <a
+          href="/"
+          class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+          >Home</a
+        >
+        <a
+          href="/peluangbisnis.html"
+          class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+          >Peluang Bisnis</a
+        >
+        <a
+          href="/produk.html"
+          class="block py-2 px-4 rounded-md font-medium text-yellow-700 font-bold transition duration-200 smooth-scroll"
+          >Produk</a
+        >
+        <a
+          href="/daftar.html"
+          class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll"
+          >Daftar</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center py-20 relative flex items-center justify-center px-6 md:px-10"
+      style="background-image: url(/images/mustikatani.jpeg)"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-80 z-0"
+      ></div>
+      <div
+        class="flex flex-col items-center text-center text-white"
+        data-aos="fade-up"
+      >
+        <h1
+          class="uppercase text-5xl md:text-6xl font-poppins tracking-wider mt-4 drop-shadow-lg"
+          data-aos="fade-up"
+        >
+          Produk Unggulan BGN
+        </h1>
+        <a
+          href="/daftar.html"
+          class="mt-6 inline-block px-6 py-3 rounded-lg bg-yellow-500 text-white font-semibold"
+          >Daftar Bisnis</a
+        >
+      </div>
+    </section>
+
+    <!-- Shape -->
+    <section class="relative h-0">
+     <div class="curved-rectangle"></div>
+    </section>
+
+    <!-- Section: Produk -->
+    <section class="bg-white py-20" id="products">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+
+        <!-- Grid Produk -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Produk 1: Mustika Tani -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/images/mustikatani.jpeg"
+              alt="Mustika Tani"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              Pupuk Organik Cair & Serbuk MUSTIKA TANI
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              POC dan Serbuk Mustika Tani adalah pupuk organik cair dan serbuk
+              yang diformulasikan untuk mendukung pertumbuhan maksimal semua
+              jenis tanaman.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('mustika-tani-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 2: Coffeemu -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="/images/coffeemu.jpeg"
+              alt="Coffeemu"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              COFFEEMU - Saatnya Pria Tampil Lebih Perkasa
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Gak cuma kopi biasa. Coffeemu diracik khusus untuk bantu kamu jadi
+              lebih kuat, lebih fokus, lebih tahan lama.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('coffeemu-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 3: EN Booster -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="/images/enbooster.jpeg"
+              alt="EN Booster"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              EN BOOSTER - Solusi Alami untuk Tubuh Lebih Bertenaga
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Herbal Premium berbentuk cair yang diformulasikan dari 10 bahan
+              alami pilihan untuk membantu memulihkan kelelahan dan meningkatkan
+              daya tahan tubuh.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('en-booster-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 4: TGROW -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="/images/tgrow.jpeg"
+              alt="TGROW"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              TGROW - Solusi Praktis & Alami untuk Pertanian Sehat
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              TGROW Super Aktif adalah pupuk organik padat berkualitas tinggi,
+              diformulasikan untuk memenuhi kebutuhan nutrisi tanaman secara
+              optimal.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('tgrow-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 5: BLECKZAMM -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="/images/bleckzamm.png"
+              alt="Bleckzamm"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              BLECKZAMM - Solusi Herbal untuk Tubuh Kuat dan Bebas Nyeri
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Kapsul herbal premium dari bahan alami seperti Habbatussauda,
+              Zaitun, Kurma Ajwa, dan Madu Yaman, dirancang untuk menjaga
+              kesehatan sendi dan syaraf.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('bleckzamm-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 6: NEOGOAT -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img
+              src="/images/neogoat.jpeg"
+              alt="NEOGOAT"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              NEOGOAT - Sehat & Cantik Alami dari Dalam
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              NEOGOAT adalah susu bubuk premium dari susu kambing etawa,
+              diperkaya dengan collagen, vitamin C, dan krim bubuk untuk menjaga
+              kesehatan kulit dan daya tahan tubuh.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('neogoat-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 7: Gulanas -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/images/gulanas.jpeg"
+              alt="Gulanas"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              Gulanas - Gula Cair Alami
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Gulanas adalah gula cair alami dari ekstrak tebu yang diperkaya
+              dengan antioksidan dan memiliki indeks glikemik rendah.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('gulanas-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 8: PROTECGEN 5000 ORAC -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/images/protecgen.jpeg"
+              alt="PROTECGEN 5000 ORAC"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              PROTECGEN 5000 ORAC - Antioksidan Alami
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              PROTECGEN 5000 ORAC adalah antioksidan alami berbahan dasar
+              ekstrak tebu kaya polifenol yang dipadukan dengan honey lemon.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('protecgen-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 9: MANTRA ALKABOOSTER -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/images/mantra.jpeg"
+              alt="MANTRA ALKABOOSTER"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">
+              MANTRA ALKABOOSTER - Antioksidan Alami
+            </h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              MANTRA ALKABOOSTER adalah antioksidan alami berbahan dasar
+              ekstrak tebu kaya polifenol yang dipadukan dengan honey lemon.
+            </p>
+            <button
+              class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200"
+              onclick="openModal('mantra-modal')"
+            >
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Modal untuk Mustika Tani -->
+          <div
+            id="mustika-tani-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/mustikatani.jpeg"
+                    alt="Produk Mustika Tani"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      Pupuk Organik Cair & Serbuk
+                      <span class="text-yellow-600">MUSTIKA TANI</span>
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      POC dan Serbuk Mustika Tani adalah pupuk organik cair dan
+                      serbuk yang diformulasikan untuk mendukung pertumbuhan
+                      maksimal semua jenis tanaman. Mengandung unsur hara makro
+                      & mikro, ZPT, hormon, serta mikroorganisme aktif yang
+                      membantu mempercepat panen, meningkatkan hasil, dan
+                      memperpanjang usia tanaman.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left">Menyuburkan tanah</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left">Mengurangi stres tanaman</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Mempercepat pertumbuhan akar dan pembungaan</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Meningkatkan hasil produksi dan memperpanjang usia
+                          tanaman</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120201810552 | Sertifikat Merk: IDM000857082 | SK
+                      Menteri Pertanian: 022.OA:KPTS:SR.310:B:02:2021
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('mustika-tani-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Coffeemu -->
+          <div
+            id="coffeemu-modal"
+            class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/coffeemu.jpeg"
+                    alt="Produk Coffeemu"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      <span class="text-yellow-600">COFFEEMU</span> - Saatnya
+                      Pria Tampil Lebih Perkasa
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Gak cuma kopi biasa. Coffeemu diracik khusus untuk bantu
+                      kamu jadi lebih kuat, lebih fokus, lebih tahan lama.
+                      Membantu kuatkan organ vital & atasi lemah syahwat,
+                      tingkatkan ereksi, kesuburan, serta menambah stamina.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Meningkatkan stamina & vitalitas</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Tajamkan fokus & daya ingat</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Membantu turunkan kolesterol & cegah penyakit
+                          degeneratif</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 0202240078781 | Sertifikat Merk: DID2025033105
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('coffeemu-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk EN Booster -->
+          <div
+            id="en-booster-modal"
+            class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/enbooster.jpeg"
+                    alt="Produk EN Booster"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      <span class="text-yellow-600">EN BOOSTER</span> - Solusi
+                      Alami untuk Tubuh Lebih Bertenaga
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      EN BOOSTER adalah produk herbal premium berbentuk cair
+                      yang diformulasikan dari 10 bahan alami pilihan. Membantu
+                      memulihkan kelelahan dan menjaga daya tahan tubuh dengan
+                      aman untuk anak hingga dewasa.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left">Memulihkan kelelahan</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Meningkatkan daya tahan tubuh</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Memperbaiki fungsi organ dalam dan mendukung
+                          detoksifikasi alami</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('en-booster-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk TGROW -->
+          <div
+            id="tgrow-modal"
+            class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/tgrow.jpeg"
+                    alt="Produk TGROW"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      <span class="text-yellow-600">TGROW</span> - Solusi
+                      Perkembangan Kehidupan yang Sehat
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      TGROW Super Aktif adalah pupuk organik padat berkualitas
+                      tinggi, diformulasikan untuk memenuhi kebutuhan nutrisi
+                      tanaman secara optimal. Mengandung unsur hara makro &
+                      mikro, ZPT, hormon, serta mikroorganisme aktif yang
+                      membantu mempercepat panen, meningkatkan hasil, dan
+                      memperpanjang usia tanaman.
+                    </p>
+
+                    <!-- Checklist Manfaat -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Memenuhi kebutuhan nutrisi tanaman</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Mempercepat panen dan meningkatkan hasil</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Memperpanjang usia tanaman secara alami</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('tgrow-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Bleckzamm -->
+          <div
+            id="bleckzamm-modal"
+            class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/bleckzamm.png"
+                    alt="Produk Bleckzamm"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      <span class="text-yellow-600">BLECKZAMM</span> - Solusi
+                      Herbal untuk Tubuh Kuat dan Bebas Nyeri
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Kapsul herbal premium dari bahan alami seperti
+                      Habbatussauda, Zaitun, Kurma Ajwa, dan Madu Yaman,
+                      dirancang untuk menjaga kesehatan sendi dan syaraf.
+                      Membantu mengurangi nyeri sendi, memperbaiki fungsi sendi,
+                      serta meningkatkan daya tahan tubuh.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left">Mengurangi nyeri sendi</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left">Meningkatkan fungsi sendi</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Meningkatkan daya tahan tubuh</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('bleckzamm-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Neogoat -->
+          <div
+            id="neogoat-modal"
+            class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/neogoat.jpeg"
+                    alt="Produk Neogoat"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      <span class="text-yellow-600">Neogoat</span> – Sehat &
+                      Cantik Alami dari Dalam
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Neogoat adalah susu bubuk premium dari susu kambing etawa,
+                      diperkaya dengan collagen, vitamin C, dan krim bubuk.
+                      Dirancang untuk menjaga kesehatan kulit dan daya tahan
+                      tubuh.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Membantu menjaga kesehatan kulit</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Meningkatkan daya tahan tubuh</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Menjaga kesehatan pencernaan</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      Halal: ID33110014548451123 | BPOM RI: MD 071111000500347
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('neogoat-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Gulanas -->
+          <div
+            id="gulanas-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/gulanas.jpeg"
+                    alt="Produk Gulanas"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      Gulanas - Gula Cair Alami
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Gulanas adalah gula cair alami dari ekstrak tebu yang
+                      diperkaya dengan antioksidan dan memiliki indeks glikemik
+                      rendah. Cocok untuk semua usia dan penderita diabetes,
+                      memberikan pilihan manis yang lebih sehat.
+                    </p>
+
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                      Manfaat:
+                    </h4>
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Mengandung antioksidan dan memiliki indeks glikemik
+                          rendah.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Membantu menjaga kestabilan gula darah.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Melawan radikal bebas berkat kandungan
+                          antioksidan.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Pilihan yang lebih sehat dibandingkan gula
+                          konvensional.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Mendukung kesehatan jantung dan meningkatkan
+                          imunitas.</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                        NIB: 8120015201239 | Halal: ID00110000462620222 | BPOM RI : MD 061167003700380
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('gulanas-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk PROTECGEN 5000 ORAC -->
+          <div
+            id="protecgen-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/protecgen.jpeg"
+                    alt="Produk PROTECGEN 5000 ORAC"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      PROTECGEN 5000 ORAC -
+                      <span class="text-yellow-600">Antioksidan Alami</span>
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      PROTECGEN 5000 ORAC adalah antioksidan alami berbahan
+                      dasar ekstrak tebu kaya polifenol yang dipadukan dengan
+                      honey lemon. Produk ini dirancang untuk membantu menangkal
+                      radikal bebas, mengontrol gula darah, serta mendukung
+                      detoksifikasi alami tubuh.
+                    </p>
+
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                      Manfaat:
+                    </h4>
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Antioksidan Tinggi (5000 ORAC) Membantu menangkal
+                          radikal bebas dan mendukung daya tahan tubuh.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Mengontrol Gula Darah, cocok untuk penderita diabetes
+                          atau diet rendah karbohidrat.</span
+                        >
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg
+                          class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="text-left"
+                          >Detoksifikasi Alami, membantu membersihkan racun dari
+                          hati dan ginjal, serta mendukung fungsi organ
+                          vital.</span
+                        >
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 8120015201239 | Halal: ID00110000433260822 | BPOM RI:
+                      MD 021167004800380
+                    </p>
+                  </div>
+
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('protecgen-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk MANTRA ALKABOOSTER -->
+          <div
+            id="mantra-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50"
+          >
+            <div
+              class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500"
+            >
+              <div class="grid md:grid-cols-2">
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src="/images/mantra.jpeg"
+                    alt="Produk MANTRA ALKABOOSTER"
+                    class="w-full h-auto rounded-md object-cover"
+                  />
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"
+                    >
+                      MANTRA ALKABOOSTER
+                      <span class="text-yellow-600">Antioksidan Alami</span>
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      MANTRA ALKABOOSTER adalah suplemen cair revolusioner yang mampu mengubah air mineral biasa menjadi Air Alkali dengan pH 8.5–9.5, kaya akan <strong>hidrogen</strong> dan <strong>mineral esensial</strong> seperti Magnesium, Kalium, Kalsium, dan Sodium.
+                    </p>
+
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                      Manfaat:
+                    </h4>
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <span class="text-left">Sebagai antioksidan yang menangkal radikal bebas penyebab kerusakan sel tubuh.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <span class="text-left">Meningkatkan daya tahan tubuh & membantu proses detoksifikasi alami.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <span class="text-left">Membantu mengatasi gangguan kulit, alergi, penuaan dini, hingga nyeri sendi dan migrain.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <span class="text-left">Menstabilkan tekanan darah dan melancarkan pencernaan (maag, sembelit, dll).</span>
+                      </li>
+                    </ul>
+
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                      Kandungan Utama:
+                    </h4>
+                    <div class="text-gray-600 mb-4 space-y-2">
+                      MAGNESIUM (Mg), KALIUM (K), KALSIUM (Ca), SODIUM (Na).
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      💧 Cocok dikonsumsi mulai usia 5 tahun ke atas.
+                    </p>
+                  </div>
+
+                  <div class="mt-6 text-center">
+                    <button
+                      onclick="closeModal('mantra-modal')"
+                      class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Keterangan dan masih banyak lagi produk yang masih diproses -->
+    <section class="bg-white pb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-10">Dan masih banyak lagi produk yang sedang diproses...</h2>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">
+        &copy; <span id="current-year"></span> BGN Corp. All rights reserved.
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      // Function to open modal with animation
+      const openModal = (id) => {
+        const modal = document.getElementById(id);
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+          modal.classList.add("opacity-100");
+        }, 50);
+      };
+
+      // Function to close modal with animation
+      const closeModal = (id) => {
+        const modal = document.getElementById(id);
+        modal.classList.remove("opacity-100");
+        setTimeout(() => {
+          modal.classList.add("hidden");
+        }, 300);
+      };
+
+      AOS.init();
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          const iconClose = document.getElementById("close-icon");
+          const iconHamburger = document.getElementById("hamburger-icon");
+          menu.classList.toggle("hidden");
+          iconClose.classList.toggle("hidden");
+          iconHamburger.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

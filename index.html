@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Berniaga Gemilang Nusantara</title>
+    
+    <!-- Meta Descriptions -->
+    <meta name="description" content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="PT. Berniaga Gemilang Nusantara, layanan berkualitas, produk terbaik, solusi bisnis">
+
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.berniagagemilang.my.id/" />
+
+    <!-- Social Media Metadata (Open Graph) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PT. Berniaga Gemilang Nusantara" />
+    <meta property="og:description" content="PT. Berniaga Gemilang Nusantara menawarkan berbagai layanan dan produk berkualitas tinggi untuk memenuhi kebutuhan Anda." />
+    <meta property="og:image" content="https://www.berniagagemilang.my.id/images/gambar1.jpeg" />
+    <meta property="og:url" content="https://www.berniagagemilang.my.id/" />
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .highlight {
+        color: #ff5722;
+        font-weight: bold;
+      }
+
+      .curved-rectangle {
+        --c: 100;
+        
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 6/2;
+        background: #ffffff;
+        mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+        clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif; /* Atau 'Roboto' jika kamu pilih font Roboto */
+          font-weight: 400;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Poppins', sans-serif; /* Ganti dengan Roboto jika lebih suka */
+          font-weight: 600; /* Lebih tegas untuk heading */
+      }
+
+      p, a, li, span {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400; /* Regular weight untuk konten teks */
+      }
+
+      button, .btn {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600; /* Telegas untuk tombol dan elemen penting */
+      }
+      .font-poppins {
+          font-family: 'poppins', sans-serif;
+          font-weight: 900; /* Regular weight */
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+    </style>
+
+  </head>
+  <body class="font-sans leading-relaxed">
+    <!-- Navbar -->
+    <header class="bg-white text-white w-full z-50 shadow-md px-6 md:px-20">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+             <div class="flex items-center">
+               <a href="/">
+                 <img src="/images/logo.png" alt="Logo BGN" class="w-20">
+               </a>
+             </div>
+        
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+              <a href="/" class="font-semibold text-yellow-700 font-bold transition duration-200 smooth-scroll">Home</a>
+              <a href="/peluangbisnis.html" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Peluang Bisnis</a>
+              <a href="/produk.html" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Produk</a>
+              <a href="/daftar.html" class="font-semibold text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Daftar</a>
+            </div>
+        
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg id="hamburger-icon" class="w-6 h-6" color="black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" color="black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </nav>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="pt-2 pb-4 space-y-2 text-white hidden">
+          <a href="/" class="block py-2 px-4 rounded-md font-medium text-yellow-700 font-bold transition duration-200 smooth-scroll">Home</a>
+          <a href="/peluangbisnis.html" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Peluang Bisnis</a>
+          <a href="/produk.html" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Produk</a>
+          <a href="/daftar.html" class="block py-2 px-4 rounded-md font-medium text-black hover:text-yellow-700 transition duration-200 smooth-scroll">Daftar</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-screen relative flex items-center justify-center px-6 md:px-10"
+      style="background-image: url(/images/hero.jpg)"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-80 z-0"
+      ></div>
+      <div
+        class="flex flex-col items-center text-center text-white"
+        data-aos="fade-up"
+      >
+        <h4
+          class="hidden md:block text-2xl bg-yellow-500 px-4 py-1 font-bold text-orange-500 drop-shadow-lg"
+        >
+          Selamat datang di era baru network marketing bersama BGN CORP!
+        </h4>
+        <h4 class="md:hidden text-2xl bg-yellow-500 px-4 py-1 font-bold text-orange-500 drop-shadow-lg">
+          Selamat datang di era baru network marketing bersama PT.BGN!
+        </h4>
+        <h1
+          class="uppercase text-5xl md:text-6xl font-poppins tracking-wider mt-4 drop-shadow-lg"
+          data-aos="fade-up"
+        >
+          Kerja lebih ringan, hasil maksimal
+        </h1>
+        <p class="mt-4 text-xl text-justify md:text-center">
+          PT.BGN adalah peluang emas untuk meraih tujuan pribadi dan mengubah kondisi keuangan Anda secara signifikan. Saatnya memulai bisnis modern yang sesuai dengan kebutuhan zaman, bersama PT.BGN.
+        </p>
+        <a
+          href="/daftar.html"
+          class="mt-6 inline-block px-6 py-3 rounded-lg bg-yellow-500 text-white font-semibold"
+          >Daftar Sekarang</a
+        >
+      </div>
+    </section>
+
+    <!-- Shape -->
+    <section class="relative h-0">
+     <div class="curved-rectangle"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="pb-20 flex flex-col items-center md:flex-row text-center bg-white text-black px-6 md:px-20"
+      id="about"
+    >
+      <img src="/images/human.png" alt="Human" class="w-1/2 md:w-1/3 mb-6 md:mb-0" data-aos="fade-up" />
+      <div class="md:ml-10">
+        <h2
+          class="text-4xl font-bold mb-6"
+          data-aos="fade-up"
+        >
+          Tentang
+          <span
+            class="bg-gradient-to-br from-yellow-500 to-black font-bold bg-clip-text text-transparent"
+            >PT.BGN</span
+          >
+        </h2>
+        <p
+          class="text-lg leading-relaxed text-justify md:text-center"
+          data-aos="fade-up"
+        >
+          PT. Berniaga Gemilang Nusantara adalah perusahaan penjualan langsung yang menjalankan sistem kemitraan berkelanjutan. Kami menyediakan produk kebutuhan sehari-hari, baik yang dapat dikonsumsi maupun digunakan untuk menunjang gaya hidup, dengan fokus pada kualitas dan manfaat. Perusahaan kami menawarkan peluang usaha inklusif yang berfokus pada pertumbuhan bersama, didukung oleh jaringan kemitraan yang solid dan sistem berbasis teknologi, untuk memberikan nilai tambah bagi mitra dan masyarakat luas.
+        </p>
+    </section>
+
+    <!-- Section: Visi dan Misi -->
+    <section class="bg-gradient-to-r from-yellow-500 to-yellow-300 py-20" id="vision-mission">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <!-- Visi -->
+        <div class="mb-16" data-aos="fade-up">
+          <h2 class="text-4xl font-extrabold text-white mb-6">
+            Visi Kami
+          </h2>
+          <p class="text-lg text-white max-w-3xl mx-auto leading-relaxed">
+            Menjadi perusahaan yang membangun ekonomi berkelanjutan berbasis kejujuran dan keberkahan, serta menciptakan jaringan bisnis yang adil dan terpercaya melalui produk berkualitas serta peluang usaha yang memberikan manfaat nyata bagi kesejahteraan masyarakat.
+          </p>
+        </div>
+
+        <!-- Misi -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl font-extrabold text-white mb-6">
+            Misi Kami
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">Menghadirkan Produk Unggulan</h3>
+              <p class="text-lg text-gray-700">
+                Menghadirkan produk unggulan yang inovatif, bermanfaat, dan bernilai tinggi bagi kehidupan masyarakat.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="100">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-people-carry"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mencetak Wirausahawan</h3>
+              <p class="text-lg text-gray-700">
+                Membantu mencetak wirausahawan yang sukses, mandiri, dan memiliki integritas tinggi.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="200">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Membangun Ekosistem Bisnis</h3>
+              <p class="text-lg text-gray-700">
+                Membangun ekosistem bisnis yang berkelanjutan dengan mengedepankan nilai kebersamaan dan kepercayaan.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="300">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Membuka Peluang Usaha</h3>
+              <p class="text-lg text-gray-700">
+                Membuka peluang usaha yang mudah diakses oleh semua kalangan untuk meningkatkan taraf hidup masyarakat.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="400">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Berkontribusi dalam Ekonomi</h3>
+              <p class="text-lg text-gray-700">
+                Berkontribusi dalam menciptakan ekonomi yang kuat melalui pemberdayaan sumber daya manusia yang kompeten dan berdaya saing.
+              </p>
+            </div>
+
+            <div class="hidden md:block bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="500">
+              <div class="text-yellow-500 text-5xl mb-4">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Membangun Jaringan Global</h3>
+              <p class="text-lg text-gray-700">
+                Membangun jaringan global yang saling mendukung dan memberikan manfaat bagi semua pihak.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Solusi untuk Berbagai Keinginan -->
+    <section class="bg-white py-20" id="solutions">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <h2 class="text-4xl font-bold mb-10 text-gray-800" data-aos="fade-up">
+          Apakah Anda Ingin Mencapai Semua Ini?
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Pengangguran yang ingin berbisnis -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <div class="text-yellow-600 text-4xl mb-4">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-600 mb-4">
+              Pengangguran yang Ingin Memulai Bisnis
+            </h3>
+            <p class="text-lg text-gray-700">
+              Kami memahami tantangan yang Anda hadapi. Dengan dukungan dan bimbingan yang tepat, Anda bisa mengubah kondisi saat ini menjadi peluang bisnis yang menguntungkan, dari pengangguran menjadi pengusaha sukses.
+            </p>
+          </div>
+
+          <!-- Ingin Penghasilan Tambahan -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <div class="text-yellow-600 text-4xl mb-4">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-600 mb-4">
+              Mencari Penghasilan Tambahan?
+            </h3>
+            <p class="text-lg text-gray-700">
+              Jika Anda ingin memperoleh penghasilan lebih dalam waktu dekat, atau bahkan lebih cepat lagi dengan mengelola bisnis sampingan tanpa harus meninggalkan pekerjaan utama Anda, ini adalah kesempatan yang tepat.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+          <!-- Bisnis Sambil Kerja atau Kuliah -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <div class="text-yellow-600 text-4xl mb-4">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-600 mb-4">
+              Bisnis Sambil Kerja atau Kuliah
+            </h3>
+            <p class="text-lg text-gray-700">
+              Anda bisa memulai dan mengembangkan bisnis yang menguntungkan tanpa harus meninggalkan pekerjaan atau pendidikan Anda. Dengan fleksibilitas ini, Anda bisa meraih kemandirian finansial sambil terus maju dalam karir atau studi.
+            </p>
+          </div>
+
+          <!-- Bisnis Tanpa Risiko Bangkrut -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <div class="text-yellow-600 text-4xl mb-4">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-600 mb-4">
+              Berbisnis Tanpa Takut Bangkrut
+            </h3>
+            <p class="text-lg text-gray-700">
+              Memulai bisnis dengan modal yang terjangkau dan pengelolaan risiko yang hati-hati memungkinkan Anda untuk membangun usaha tanpa kekhawatiran akan kerugian finansial yang besar.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-3xl font-bold text-gray-800 mb-6" data-aos="fade-up">
+            Wujudkan Impian Anda Bersama Kami
+          </h3>
+          <p class="text-xl text-gray-700 mb-6" data-aos="fade-up">
+            Apakah Anda ingin mencapai impian besar seperti membeli rumah, kendaraan, liburan impian, atau bahkan menunaikan ibadah Umroh atau Haji? Atau mungkin Anda ingin melunasi utang dan mewujudkan target finansial lainnya?
+          </p>
+          <p class="text-xl text-gray-700 mb-6" data-aos="fade-up">
+            Jika Anda merasa telah berusaha keras namun belum berhasil membahagiakan keluarga Anda, saatnya untuk bekerja lebih cerdas. Kami membantu Anda untuk meraih kesuksesan yang lebih besar dengan solusi yang tepat.
+          </p>
+          <a href="/daftar.html" class="inline-block px-8 py-4 bg-yellow-500 text-white text-lg font-semibold rounded-lg hover:bg-yellow-600 transition duration-200" data-aos="fade-up">
+            Daftar Sekarang dan Mulai Perjalanan Anda
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section: Produk -->
+    <section class="bg-white py-20" id="products">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-12" data-aos="fade-up">
+          Produk Kami
+        </h2>
+
+        <!-- Grid Produk -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          
+          <!-- Produk 1: Mustika Tani -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in">
+            <img src="/images/mustikatani.jpeg" alt="Mustika Tani" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">Pupuk Organik Cair & Serbuk MUSTIKA TANI</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              POC dan Serbuk Mustika Tani adalah pupuk organik cair dan serbuk yang diformulasikan untuk mendukung pertumbuhan maksimal semua jenis tanaman.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('mustika-tani-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 2: Coffeemu -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="100">
+            <img src="/images/coffeemu.jpeg" alt="Coffeemu" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">COFFEEMU - Saatnya Pria Tampil Lebih Perkasa</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Gak cuma kopi biasa. Coffeemu diracik khusus untuk bantu kamu jadi lebih kuat, lebih fokus, lebih tahan lama.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('coffeemu-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 3: EN Booster -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="200">
+            <img src="/images/enbooster.jpeg" alt="EN Booster" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">EN BOOSTER - Solusi Alami untuk Tubuh Lebih Bertenaga</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Herbal Premium berbentuk cair yang diformulasikan dari 10 bahan alami pilihan untuk membantu memulihkan kelelahan dan meningkatkan daya tahan tubuh.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('en-booster-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 4: TGROW -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="300">
+            <img src="/images/tgrow.jpeg" alt="TGROW" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">TGROW - Solusi Praktis & Alami untuk Pertanian Sehat</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              TGROW Super Aktif adalah pupuk organik padat berkualitas tinggi, diformulasikan untuk memenuhi kebutuhan nutrisi tanaman secara optimal.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('tgrow-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 5: BLECKZAMM -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="400">
+            <img src="/images/bleckzamm.png" alt="Bleckzamm" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">BLECKZAMM - Solusi Herbal untuk Tubuh Kuat dan Bebas Nyeri</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              Kapsul herbal premium dari bahan alami seperti Habbatussauda, Zaitun, Kurma Ajwa, dan Madu Yaman, dirancang untuk menjaga kesehatan sendi dan syaraf.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('bleckzamm-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Produk 6: NEOGOAT -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in" data-aos-delay="500">
+            <img src="/images/neogoat.jpeg" alt="NEOGOAT" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 line-clamp-2">NEOGOAT - Sehat & Cantik Alami dari Dalam</h3>
+            <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+              NEOGOAT adalah susu bubuk premium dari susu kambing etawa, diperkaya dengan collagen, vitamin C, dan krim bubuk untuk menjaga kesehatan kulit dan daya tahan tubuh.
+            </p>
+            <button class="text-yellow-500 font-semibold mt-2 hover:text-yellow-600 transition duration-200" onclick="openModal('neogoat-modal')">
+              Selengkapnya
+            </button>
+          </div>
+
+          <!-- Modal untuk Mustika Tani -->
+          <div id="mustika-tani-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+              
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/mustikatani.jpeg" alt="Produk Mustika Tani" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      Pupuk Organik Cair & Serbuk <span class="text-yellow-600">MUSTIKA TANI</span>
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      POC dan Serbuk Mustika Tani adalah pupuk organik cair dan serbuk yang diformulasikan untuk mendukung pertumbuhan maksimal semua jenis tanaman. Mengandung unsur hara makro & mikro, ZPT, hormon, serta mikroorganisme aktif yang membantu mempercepat panen, meningkatkan hasil, dan memperpanjang usia tanaman.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Menyuburkan tanah</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Mengurangi stres tanaman</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Mempercepat pertumbuhan akar dan pembungaan</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan hasil produksi dan memperpanjang usia tanaman</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120201810552 | Sertifikat Merk: IDM000857082 | SK Menteri Pertanian: 022.OA:KPTS:SR.310:B:02:2021
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('mustika-tani-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Coffeemu -->
+          <div id="coffeemu-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/coffeemu.jpeg" alt="Produk Coffeemu" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      <span class="text-yellow-600">COFFEEMU</span> - Saatnya Pria Tampil Lebih Perkasa
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Gak cuma kopi biasa. Coffeemu diracik khusus untuk bantu kamu jadi lebih kuat, lebih fokus, lebih tahan lama. Membantu kuatkan organ vital & atasi lemah syahwat, tingkatkan ereksi, kesuburan, serta menambah stamina.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan stamina & vitalitas</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Tajamkan fokus & daya ingat</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Membantu turunkan kolesterol & cegah penyakit degeneratif</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 0202240078781 | Sertifikat Merk: DID2025033105
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('coffeemu-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk EN Booster -->
+          <div id="en-booster-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/enbooster.jpeg" alt="Produk EN Booster" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      <span class="text-yellow-600">EN BOOSTER</span> - Solusi Alami untuk Tubuh Lebih Bertenaga
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      EN BOOSTER adalah produk herbal premium berbentuk cair yang diformulasikan dari 10 bahan alami pilihan. Membantu memulihkan kelelahan dan menjaga daya tahan tubuh dengan aman untuk anak hingga dewasa.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Memulihkan kelelahan</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan daya tahan tubuh</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Memperbaiki fungsi organ dalam dan mendukung detoksifikasi alami</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('en-booster-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk TGROW -->
+          <div id="tgrow-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/tgrow.jpeg" alt="Produk TGROW" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      <span class="text-yellow-600">TGROW</span> - Solusi Perkembangan Kehidupan yang Sehat
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      TGROW Super Aktif adalah pupuk organik padat berkualitas tinggi, diformulasikan untuk memenuhi kebutuhan nutrisi tanaman secara optimal. Mengandung unsur hara makro & mikro, ZPT, hormon, serta mikroorganisme aktif yang membantu mempercepat panen, meningkatkan hasil, dan memperpanjang usia tanaman.
+                    </p>
+
+                    <!-- Checklist Manfaat -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Memenuhi kebutuhan nutrisi tanaman</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Mempercepat panen dan meningkatkan hasil</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Memperpanjang usia tanaman secara alami</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('tgrow-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Bleckzamm -->
+          <div id="bleckzamm-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/bleckzamm.png" alt="Produk Bleckzamm" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      <span class="text-yellow-600">BLECKZAMM</span> - Solusi Herbal untuk Tubuh Kuat dan Bebas Nyeri
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Kapsul herbal premium dari bahan alami seperti Habbatussauda, Zaitun, Kurma Ajwa, dan Madu Yaman, dirancang untuk menjaga kesehatan sendi dan syaraf. Membantu mengurangi nyeri sendi, memperbaiki fungsi sendi, serta meningkatkan daya tahan tubuh.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Mengurangi nyeri sendi</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan fungsi sendi</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan daya tahan tubuh</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      NIB: 9120100441335 | Sertifikat Merk: DID2024091546
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('bleckzamm-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal untuk Neogoat -->
+          <div id="neogoat-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-4xl max-h-screen overflow-y-auto transform transition-all duration-500">
+
+              <div class="grid md:grid-cols-2">
+                
+                <!-- Gambar Produk -->
+                <div class="bg-gray-100 flex items-center justify-center p-6">
+                  <img src="/images/neogoat.jpeg" alt="Produk Neogoat" class="w-full h-auto rounded-md object-cover">
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                      <span class="text-yellow-600">Neogoat</span> – Sehat & Cantik Alami dari Dalam
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                      Neogoat adalah susu bubuk premium dari susu kambing etawa, diperkaya dengan collagen, vitamin C, dan krim bubuk. Dirancang untuk menjaga kesehatan kulit dan daya tahan tubuh.
+                    </p>
+
+                    <!-- Daftar Manfaat dengan Centang -->
+                    <ul class="text-gray-600 mb-4 space-y-2">
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Membantu menjaga kesehatan kulit</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Meningkatkan daya tahan tubuh</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-left">Menjaga kesehatan pencernaan</span>
+                      </li>
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      Halal: ID33110014548451123 | BPOM RI: MD 071111000500347
+                    </p>
+                  </div>
+
+                  <!-- Tombol Tutup -->
+                  <div class="mt-6 text-center">
+                    <button onclick="closeModal('neogoat-modal')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-5 rounded transition duration-200">
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara Bergabung -->
+    <section class="py-16 px-4 md:px-20 bg-white text-gray-800">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-10" data-aos="fade-up">Cara Bergabung Menjadi Mitra Niaga</h2>
+
+        <!-- Langkah Awal -->
+        <div class="space-y-6 mb-12" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-gray-700 mb-4">Langkah Awal</h3>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="flex-shrink-0 bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              💳
+            </div>
+            <p class="text-lg">Membayar Rp 100.000 untuk ID Virtual Office</p>
+          </div>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex-shrink-0 bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              🛒
+            </div>
+            <p class="text-lg">Melakukan belanja produk pertama (First Order)</p>
+          </div>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="flex-shrink-0 bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              📋
+            </div>
+            <p class="text-lg">Bersedia mengikuti kebijakan dan prosedur yang berlaku</p>
+          </div>
+        </div>
+
+        <!-- Keuntungan -->
+        <div class="space-y-6 mb-12" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-semibold text-gray-700 mb-4">Keuntungan Menjadi Mitra Niaga</h3>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="flex-shrink-0 bg-blue-800 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              🌿
+            </div>
+            <p class="text-lg">Mendapatkan manfaat dari produk berkualitas</p>
+          </div>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex-shrink-0 bg-blue-800 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              💰
+            </div>
+            <p class="text-lg">Diskon menarik untuk First Order (FO) dan Repeat Order (RO)</p>
+          </div>
+
+          <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="450">
+            <div class="flex-shrink-0 bg-blue-800 text-white w-10 h-10 flex items-center justify-center rounded-full">
+              📜
+            </div>
+            <p class="text-lg">Mendapatkan lisensi kemitraan resmi dari sistem Mitra Niaga Berniaga</p>
+          </div>
+        </div>
+
+        <!-- Keterangan -->
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-md mb-12" data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-xl font-semibold text-yellow-700 mb-2">Keterangan Penting</h3>
+          <p class="text-gray-700">
+            Pendaftaran dan pembelian paket produk harus mengikuti prosedur yang benar sesuai dengan ketentuan perusahaan. Perusahaan tidak bertanggung jawab atas kerugian akibat transfer ke rekening pribadi oknum dan di luar prosedur resmi.
+          </p>
+        </div>
+
+        <!-- Pilihan Paket -->
+        <div class="space-y-10" data-aos="fade-up" data-aos-delay="550">
+          <h3 class="text-2xl font-semibold text-gray-700 mb-4">Pilihan Paket Belanja (FO)</h3>
+
+          <!-- Paket Basic Gold -->
+          <div class="border border-gray-200 rounded-lg p-6 shadow-sm" data-aos="fade-up" data-aos-delay="600">
+            <h4 class="text-xl font-bold text-yellow-500 mb-2">🥇 Basic Gold SBGT</h4>
+            <ul class="text-gray-700 space-y-1">
+              <li>Harga Produk FO: <strong>Rp 1.750.000</strong></li>
+              <li>Mendapatkan Produk senilai: <strong>Rp 2.750.000</strong></li>
+              <li>Bonus: <strong>11 Box + 1 Box Promo</strong></li>
+              <li>Total: <strong>12 Produk</strong></li>
+            </ul>
+          </div>
+
+          <!-- Paket Basic Diamond -->
+          <div class="border border-gray-200 rounded-lg p-6 shadow-sm" data-aos="fade-up" data-aos-delay="650">
+            <h4 class="text-xl font-bold text-blue-800 mb-2">💎 Basic Diamond BD</h4>
+            <ul class="text-gray-700 space-y-1">
+              <li>Harga Produk FO: <strong>Rp 2.750.000</strong></li>
+              <li>Mendapatkan Produk senilai: <strong>Rp 4.500.000</strong></li>
+              <li>Bonus: <strong>18 Box + 2 Produk Promo</strong></li>
+              <li>Total: <strong>20 Produk</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section: Pilihan Paket Kemitraan dan Upgrade -->
+        <section class="bg-white py-20 px-4 md:px-20 text-gray-800" id="paket-kemitraan">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-16" data-aos="fade-up">
+              Pilihan Paket Kemitraan & Upgrade
+            </h2>
+
+            <!-- Tabel GOLD -->
+            <div class="mb-16" data-aos="fade-up">
+              <h3 class="text-2xl font-bold text-gray-700 mb-4 flex items-center gap-2">
+                🥇 <span>Kemitraan <span class="text-yellow-600">GOLD</span></span>
+              </h3>
+              <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full bg-white border border-gray-200 text-sm text-left">
+                  <thead class="bg-yellow-500 text-white uppercase text-xs">
+                    <tr>
+                      <th class="px-4 py-3 border">No</th>
+                      <th class="px-4 py-3 border">Paket</th>
+                      <th class="px-4 py-3 border">Hak Usaha</th>
+                      <th class="px-4 py-3 border">Harga</th>
+                      <th class="px-4 py-3 border">Jumlah Produk</th>
+                      <th class="px-4 py-3 border">Produk Senilai</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-yellow-50">
+                      <td class="px-4 py-3 border">1</td>
+                      <td class="px-4 py-3 border font-medium">Basic Gold</td>
+                      <td class="px-4 py-3 border">1</td>
+                      <td class="px-4 py-3 border">Rp 1.750.000</td>
+                      <td class="px-4 py-3 border">11</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 2.750.000</td>
+                    </tr>
+                    <tr class="hover:bg-yellow-50">
+                      <td class="px-4 py-3 border">2</td>
+                      <td class="px-4 py-3 border font-medium">Premium Gold</td>
+                      <td class="px-4 py-3 border">3</td>
+                      <td class="px-4 py-3 border">Rp 5.250.000</td>
+                      <td class="px-4 py-3 border">33</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 8.250.000</td>
+                    </tr>
+                    <tr class="hover:bg-yellow-50">
+                      <td class="px-4 py-3 border">3</td>
+                      <td class="px-4 py-3 border font-medium">VIP Gold</td>
+                      <td class="px-4 py-3 border">7</td>
+                      <td class="px-4 py-3 border">Rp 12.250.000</td>
+                      <td class="px-4 py-3 border">77</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 19.250.000</td>
+                    </tr>
+                    <tr class="hover:bg-yellow-50">
+                      <td class="px-4 py-3 border">4</td>
+                      <td class="px-4 py-3 border font-medium">VVIP Gold</td>
+                      <td class="px-4 py-3 border">15</td>
+                      <td class="px-4 py-3 border">Rp 26.250.000</td>
+                      <td class="px-4 py-3 border">165</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 41.250.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tabel DIAMOND -->
+            <div data-aos="fade-up">
+              <h3 class="text-2xl font-bold text-gray-700 mb-4 flex items-center gap-2">
+                💎 <span>Kemitraan <span class="text-blue-600">DIAMOND</span></span>
+              </h3>
+              <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full bg-white border border-gray-200 text-sm text-left">
+                  <thead class="bg-blue-800 text-white uppercase text-xs">
+                    <tr>
+                      <th class="px-4 py-3 border">No</th>
+                      <th class="px-4 py-3 border">Paket</th>
+                      <th class="px-4 py-3 border">Hak Usaha</th>
+                      <th class="px-4 py-3 border">Harga</th>
+                      <th class="px-4 py-3 border">Jumlah Produk</th>
+                      <th class="px-4 py-3 border">Produk Senilai</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-blue-50">
+                      <td class="px-4 py-3 border">1</td>
+                      <td class="px-4 py-3 border font-medium">Basic Diamond</td>
+                      <td class="px-4 py-3 border">1</td>
+                      <td class="px-4 py-3 border">Rp 2.750.000</td>
+                      <td class="px-4 py-3 border">18</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 4.500.000</td>
+                    </tr>
+                    <tr class="hover:bg-blue-50">
+                      <td class="px-4 py-3 border">2</td>
+                      <td class="px-4 py-3 border font-medium">Premium Diamond</td>
+                      <td class="px-4 py-3 border">3</td>
+                      <td class="px-4 py-3 border">Rp 8.250.000</td>
+                      <td class="px-4 py-3 border">54</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 13.500.000</td>
+                    </tr>
+                    <tr class="hover:bg-blue-50">
+                      <td class="px-4 py-3 border">3</td>
+                      <td class="px-4 py-3 border font-medium">VIP Diamond</td>
+                      <td class="px-4 py-3 border">7</td>
+                      <td class="px-4 py-3 border">Rp 19.250.000</td>
+                      <td class="px-4 py-3 border">126</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 31.500.000</td>
+                    </tr>
+                    <tr class="hover:bg-blue-50">
+                      <td class="px-4 py-3 border">4</td>
+                      <td class="px-4 py-3 border font-medium">VVIP Diamond</td>
+                      <td class="px-4 py-3 border">15</td>
+                      <td class="px-4 py-3 border">Rp 41.250.000</td>
+                      <td class="px-4 py-3 border">270</td>
+                      <td class="px-4 py-3 border text-green-600 font-semibold">Rp 67.500.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Section: Keunggulan Bisnis BGN CORP -->
+    <section class="bg-white pb-20" id="benefits">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="bg-blue-800 rounded-2xl shadow-xl p-10 max-w-5xl mx-auto" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+            Enaknya Berbisnis di <span class="text-yellow-400">BGN CORP</span>
+          </h2>
+
+          <ul class="space-y-4 text-lg text-white">
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Tidak Ada Target
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Tidak ada TUTUP POIN
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Marketing Plan Menggunakan Hybrid System
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> POIN Reward tidak akan direset dan tidak akan pernah hangus
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> POIN diakumulasi terus dari RO & FO
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Support System perusahaan & tim mentor sangat kuat
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Kerjanya Team, tidak sendiri
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> Bisnis Bisa Diwariskan
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yellow-400 text-xl">✅</span> ID Member Berlaku Seumur Hidup
+            </li>
+          </ul>
+
+          <div class="text-center mt-10">
+            <a href="/daftar.html"
+              class="inline-block px-8 py-4 bg-yellow-500 text-white text-lg font-semibold rounded-lg hover:bg-yellow-600 transition duration-200">
+              Gabung Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimoni Reward -->
+    <section class="bg-gradient-to-br from-blue-800 to-blue-300 py-20" id="testimoniReward">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-12" data-aos="fade-up">
+          Testimoni peraih Reward share poin plan A
+        </h2>
+
+        <div class="relative">
+          <div id="testimonial-slider" class="w-full flex justify-center items-center overflow-hidden">
+          </div>
+
+          <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full p-3 hover:bg-gray-200">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full p-3 hover:bg-gray-200">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <p>Lihat semua testimoni di <a href="/peluangbisnis.html#testimoniReward" target="_blank" rel="noopener noreferrer" class="font-bold text-yellow-400 hover:underline">Testimonial</a> <span class="animate-pulse text-sm"><i class="fas fa-arrow-left"></i> klik disini</span></p>
+      </div>
+    </section>
+
+    <!-- Section: Testimoni -->
+    <!-- <section class="bg-gradient-to-br from-blue-800 to-blue-300 py-20" id="testimonials">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-12" data-aos="fade-up">
+          Apa Kata Mereka Tentang Kami?
+        </h2>
+
+        <div class="relative">
+          <div id="testimonial-slider" class="w-full flex justify-center items-center overflow-hidden">
+          </div>
+
+          <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full p-3 hover:bg-gray-200">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full p-3 hover:bg-gray-200">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Section: Legalitas -->
+    <section class="bg-white py-20" id="legalitas">
+      <div class="container mx-auto px-6 md:px-20 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-12" data-aos="fade-up">
+          Legalitas PT. Berniaga Gemilang Nusantara
+        </h2>
+
+        <!-- Gambar Legalitas -->
+        <div class="flex justify-center mb-8">
+          <img src="/images/legalitas.jpeg" alt="Legalitas BGN" class="w-full max-w-3xl h-auto rounded-lg shadow-lg" data-aos="zoom-in">
+        </div>
+
+        <!-- Keterangan Legalitas -->
+        <div class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
+          <p class="mb-6" data-aos="fade-up">
+            PT. Berniaga Gemilang Nusantara (BGN) telah memenuhi semua persyaratan legalitas yang diperlukan untuk menjalankan operasional bisnisnya. Kami memiliki berbagai izin dan sertifikasi yang sah dan diakui oleh otoritas yang berwenang. Komitmen kami terhadap kepercayaan dan transparansi menjadikan BGN sebagai perusahaan yang dapat diandalkan dalam menjalin kemitraan bisnis jangka panjang.
+          </p>
+          <p class="" data-aos="fade-up">
+            Kami sangat menghargai integritas dan kualitas dalam setiap langkah yang kami ambil. Semua proses operasional kami diawasi dengan ketat sesuai dengan peraturan yang berlaku, untuk memastikan bahwa setiap produk dan layanan yang kami tawarkan memenuhi standar yang tinggi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Promo Spesial -->
+    <section class="py-16 px-4 md:px-20 bg-yellow-400 text-gray-800">
+    <div class="max-w-5xl mx-auto">
+        <!-- Judul -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-10" data-aos="fade-up">
+        🎁 Promo Spesial Buat yang Daftar Hari Ini!
+        </h2>
+
+        <!-- Deskripsi Promo -->
+        <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="200">
+        <p class="text-lg leading-relaxed">
+            Buruan daftar sekarang dan langsung dapetin <span class="font-semibold text-blue-600">website promosi kece kayak gini</span> ✨<br>
+            PLUS akses ke grup edukasi & bimbingan eksklusif yang isinya <span class="italic">nggak cuma share meme</span> tapi juga ilmu cuan! 💸
+        </p>
+        </div>
+
+        <!-- Section Konten Promo -->
+        <div class="space-y-12" data-aos="fade-up" data-aos-delay="300">
+
+        <!-- Div 1: Kenapa Harus Daftar -->
+        <div class="border border-yellow-300 rounded-xl p-6 bg-white shadow-md" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-2xl font-bold text-yellow-700 mb-4">🔥 Rugi Banget Kalau Nggak Daftar Sekarang!</h3>
+            <p class="text-gray-700 leading-relaxed">
+            Jadi distributor <strong>BGN</strong> itu ibarat dapet cheat code bisnis — modal ringan, potensi besar! 🚀<br><br>
+            Mulai lebih awal bikin kamu selangkah lebih depan dari yang lain. Ambil posisi sekarang dan jadi yang pertama di kota kamu yang meroket! 🚀
+            </p>
+        </div>
+
+        <!-- Div 2: Fasilitas Digital Marketing -->
+        <div class="border border-blue-300 rounded-xl p-6 bg-blue-50 shadow-md" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4">💻 Dapet Support Bimbingan Bisnis? Pastinya!</h3>
+            <p class="text-gray-700 leading-relaxed">
+            Dengan <strong>BGN</strong>, kamu nggak cuma dikasih produk, tapi juga dapet grup edukasi dan bimbingan eksklusif! 🎯<br>
+            Yuk, segera daftar dan dapatkan semua Keuntungan ini!
+            </p>
+        </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-14 animate-bounce" data-aos="zoom-in-up" data-aos-delay="600">
+        <a href="/daftar.html">
+            <button class="bg-blue-800 text-white px-10 py-4 rounded-md text-xl shadow-lg transition duration-300 hover:bg-blue-900">
+                🚀 DAFTAR SEKARANG YUK!
+            </button>
+        </a>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="py-20 px-6 md:px-20 md:px-20 text-black"
+      id="contact"
+      data-aos="fade-up"
+    >
+      <h2 class="text-4xl font-bold text-center mb-6">Kontak Kami</h2>
+        <div class="mx-auto text-center">
+        <p class="text-lg leading-relaxed">
+            Alamat Kantor Pusat BGN: Jl. Villa Bandung Indah Komplek Fikom Blok A No. 5 RT 005 RW 011, Cileunyi Wetan, Cileunyi, Bandung, Jawa Barat 40622
+        </p>
+        <div class="mt-4">
+          <!-- Embed Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63369.36733672682!2d107.75611060321044!3d-6.940044606594215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c3005056d0dd%3A0xc4b2ef401496678!2sKantor%20PT.%20Berniaga%20Gemilang%20Nusantara!5e0!3m2!1sen!2sus!4v1747961788020!5m2!1sen!2sus"
+            width="100%"
+            height="500"
+            style="border: 0; border-radius: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <!-- <p class="text-lg mt-4 leading-relaxed">
+          Anda juga bisa langsung menghubungi kami melalui WhatsApp untuk
+          pemesanan atau informasi lebih lanjut.
+        </p>
+        <a
+          href="https://wa.me/6283879415745?text=Halo!%20Saya%20ingin%20bertanya%20lebih%20lanjut%20tentang%20BGN%20CORP."
+          class="mt-4 inline-block px-8 py-4 bg-yellow-500 text-white text-lg font-semibold rounded-lg hover:bg-yellow-600 transition duration-200">
+          Hubungi Kami</a
+        > -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">
+        &copy; <span id="current-year"></span> BGN Corp. All rights reserved.
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      // Function to open modal with animation
+      const openModal = (id) => {
+        const modal = document.getElementById(id);
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.add('opacity-100');
+        }, 50);
+      };
+
+      // Function to close modal with animation
+      const closeModal = (id) => {
+        const modal = document.getElementById(id);
+        modal.classList.remove('opacity-100');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+      };
+
+// Testimoni Reward
+      // Array data testimoni
+      const testimoniRewardData = [
+          { image: "/images/testimoni/reward1.jpeg" },
+          { image: "/images/testimoni/reward2.jpeg" },
+          { image: "/images/testimoni/reward3.jpeg" },
+          { image: "/images/testimoni/reward4.jpeg" },
+          { image: "/images/testimoni/reward5.jpeg" },
+          { image: "/images/testimoni/reward6.jpeg" },
+          { image: "/images/testimoni/reward7.jpeg" },
+          { image: "/images/testimoni/reward8.jpeg" },
+          { image: "/images/testimoni/reward9.jpeg" },
+        ];
+
+      // Function to generate testimonial items dynamically
+      const generatetestimoniReward = () => {
+        const sliderContainer = document.getElementById('testimonial-slider');
+        
+        testimoniRewardData.map((item, index) => {
+          const div = document.createElement('div');
+          div.classList.add('testimonial-item', 'flex', 'items-center', 'justify-center', 'w-full', 'p-6', 'transition', 'duration-300', 'ease-in-out', 'transform');
+          
+          div.innerHTML = `
+            <div class="flex items-center justify-center w-full md:w-1/2 bg-white p-6 rounded-lg shadow-lg">
+              <img src="${item.image}" alt="Testimonial ${index + 1}" class="w-full rounded-lg mb-4" />
+            </div>
+          `;
+          
+          sliderContainer.appendChild(div);
+        });
+      };
+
+      // Initialize the testimoniReward slider
+      generatetestimoniReward();
+      
+      // Modal navigation logic
+      let currentIndex = 0;
+      const totaltestimoniReward = testimoniRewardData.length;
+      const testimonialItems = document.querySelectorAll('.testimonial-item');
+
+      // Show the current testimonial
+      const showTestimonial = (index) => {
+        testimonialItems.forEach((testimonial, i) => {
+          testimonial.classList.add('hidden');
+        });
+        testimonialItems[index].classList.remove('hidden');
+      };
+
+      // Next button click handler
+      document.getElementById('nextBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totaltestimoniReward;
+        showTestimonial(currentIndex);
+      });
+
+      // Previous button click handler
+      document.getElementById('prevBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totaltestimoniReward) % totaltestimoniReward;
+        showTestimonial(currentIndex);
+      });
+
+      // Initialize the first testimonial
+      showTestimonial(currentIndex);
+      
+      // Auto slide testimonial every 5 seconds
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % totaltestimoniReward;
+        showTestimonial(currentIndex);
+      }, 4000); // 5000ms = 5 seconds
+
+
+// Testimonial
+      // const testimonialsData = [
+      //   {
+      //     name: "Arif Budiman",
+      //     role: "Pengusaha",
+      //     testimonial: "BGN Corp telah mengubah cara saya menjalankan bisnis. Dengan produk-produk berkualitas dan sistem yang mudah dipahami, saya bisa meraih hasil yang maksimal.",
+      //     image: "/images/mustikatani.jpeg"
+      //   },
+      //   {
+      //     name: "Siti Nurhaliza",
+      //     role: "Mitra BGN",
+      //     testimonial: "Saya merasa sangat terbantu dengan kesempatan yang diberikan oleh PT. BGN. Program kemitraannya sangat memotivasi dan menguntungkan.",
+      //     image: "/images/coffeemu.jpeg"
+      //   },
+      //   {
+      //     name: "Faisal Rahman",
+      //     role: "Mitra dan Pelanggan",
+      //     testimonial: "Produk-produk BGN sangat bermanfaat dan sesuai dengan kebutuhan saya. Saya telah melihat peningkatan signifikan dalam bisnis saya.",
+      //     image: "/images/enbooster.jpeg"
+      //   },
+      //   {
+      //     name: "Dina Putri",
+      //     role: "Pelanggan Setia",
+      //     testimonial: "Selama menggunakan produk dari BGN, saya merasakan manfaat yang luar biasa. Kualitasnya sangat terjamin.",
+      //     image: "/images/tgrow.jpeg"
+      //   },
+      //   {
+      //     name: "Ali Akbar",
+      //     role: "Mitra BGN",
+      //     testimonial: "Melalui kemitraan dengan BGN, saya bisa mengembangkan bisnis saya lebih pesat. Terima kasih BGN!",
+      //     image: "/images/bleckzamm.png"
+      //   },
+      //   {
+      //     name: "Rina Agustina",
+      //     role: "Pengusaha",
+      //     testimonial: "Produk-produk dari BGN memberikan hasil yang sangat memuaskan untuk usaha saya. Saya sangat merekomendasikannya.",
+      //     image: "/images/neogoat.jpeg"
+      //   },
+      //   {
+      //     name: "Budi Santoso",
+      //     role: "Mitra BGN",
+      //     testimonial: "Saya sudah menjadi mitra BGN selama beberapa bulan dan hasil yang saya capai jauh lebih baik dari yang saya harapkan.",
+      //     image: "/images/mustikatani.jpeg"
+      //   },
+      //   {
+      //     name: "Martha Sari",
+      //     role: "Pengguna Produk",
+      //     testimonial: "Setelah mencoba produk BGN, saya merasa tubuh saya lebih bertenaga dan lebih sehat. Saya sangat puas.",
+      //     image: "/images/coffeemu.jpeg"
+      //   },
+      //   {
+      //     name: "Joko Prasetyo",
+      //     role: "Mitra Bisnis",
+      //     testimonial: "BGN memberikan peluang bisnis yang luar biasa. Dengan sistem yang sederhana dan produk berkualitas, saya mendapatkan banyak manfaat.",
+      //     image: "/images/enbooster.jpeg"
+      //   },
+      //   {
+      //     name: "Tina Maulana",
+      //     role: "Pelanggan",
+      //     testimonial: "Saya sangat puas dengan hasil dari produk-produk BGN. Sangat membantu dalam aktivitas sehari-hari.",
+      //     image: "/images/tgrow.jpeg"
+      //   },
+      //   {
+      //     name: "Rudi Hartono",
+      //     role: "Mitra BGN",
+      //     testimonial: "BGN tidak hanya memberikan produk berkualitas, tetapi juga dukungan yang sangat kuat bagi mitranya.",
+      //     image: "/images/bleckzamm.png"
+      //   },
+      //   {
+      //     name: "Anita Permatasari",
+      //     role: "Pengusaha Muda",
+      //     testimonial: "Kemitraan dengan BGN membuka peluang besar dalam usaha saya. Saya sangat bangga menjadi bagian dari BGN.",
+      //     image: "/images/neogoat.jpeg"
+      //   },
+      //   {
+      //     name: "Sudirman",
+      //     role: "Pelanggan Setia",
+      //     testimonial: "Saya menggunakan produk BGN dan hasilnya luar biasa. Sangat bermanfaat untuk kesehatan tubuh.",
+      //     image: "/images/mustikatani.jpeg"
+      //   },
+      //   {
+      //     name: "Fiona Kurniawati",
+      //     role: "Mitra BGN",
+      //     testimonial: "Sebagai mitra, saya sangat merasakan manfaat dari sistem yang diterapkan oleh BGN. Sangat menguntungkan.",
+      //     image: "/images/coffeemu.jpeg"
+      //   },
+      //   {
+      //     name: "Eko Prabowo",
+      //     role: "Mitra Bisnis",
+      //     testimonial: "Program yang disediakan BGN sangat bermanfaat. Tidak hanya produk, tetapi juga dukungan bisnis yang luar biasa.",
+      //     image: "/images/enbooster.jpeg"
+      //   },
+      //   {
+      //     name: "Nia Ramadhani",
+      //     role: "Pengusaha Sukses",
+      //     testimonial: "Produk BGN sangat cocok untuk menunjang bisnis saya. Saya puas dengan kualitas dan manfaatnya.",
+      //     image: "/images/tgrow.jpeg"
+      //   },
+      //   {
+      //     name: "Dewi Lestari",
+      //     role: "Mitra dan Pelanggan",
+      //     testimonial: "Setelah bergabung dengan BGN, saya merasa lebih produktif dan mendapatkan keuntungan yang lebih baik.",
+      //     image: "/images/bleckzamm.png"
+      //   },
+      //   {
+      //     name: "Gustavo Hernandez",
+      //     role: "Pelanggan dan Mitra",
+      //     testimonial: "Produk BGN tidak hanya meningkatkan kualitas hidup saya, tetapi juga memberikan peluang bisnis yang luar biasa.",
+      //     image: "/images/neogoat.jpeg"
+      //   },
+      //   {
+      //     name: "Rachmat Hidayat",
+      //     role: "Pengusaha",
+      //     testimonial: "BGN memberikan solusi yang tepat untuk kebutuhan bisnis saya. Peluang bisnis yang ditawarkan sangat besar.",
+      //     image: "/images/mustikatani.jpeg"
+      //   },
+      //   {
+      //     name: "Lina Susanti",
+      //     role: "Mitra Setia",
+      //     testimonial: "Saya sudah lama bergabung dengan BGN, dan saya bisa merasakan dampak positif yang sangat besar dari produk dan program yang mereka tawarkan.",
+      //     image: "/images/coffeemu.jpeg"
+      //   }
+      // ];
+
+      // const generateTestimonials = () => {
+      //   const sliderContainer = document.getElementById('testimonial-slider');
+        
+      //   testimonialsData.map((item, index) => {
+      //     const div = document.createElement('div');
+      //     div.classList.add('testimonial-item', 'flex-none', 'w-full', 'p-6', 'transition', 'duration-300', 'ease-in-out', 'transform');
+          
+      //     const stars = Array(5).fill('★').map((star, i) => {
+      //       return `<span class="text-yellow-500 text-3xl md:text-4xl">${star}</span>`;
+      //     }).join('');
+          
+      //     div.innerHTML = `
+      //       <div class="bg-white p-6 rounded-lg shadow-lg">
+      //         <div class="mb-4">
+      //           ${stars}
+      //         </div>
+      //         <h3 class="text-2xl font-semibold text-gray-800 mb-4">${item.name}</h3>
+      //         <p class="text-gray-600 mb-4">${item.role}</p>
+      //         <p class="text-gray-700 mb-4 text-sm line-clamp-2">
+      //           ${item.testimonial}
+      //         </p>
+      //       </div>
+      //     `;
+          
+      //     sliderContainer.appendChild(div);
+      //   });
+      // };
+
+      // generateTestimonials();
+
+      // let currentIndex = 0;
+      // const totalTestimonials = testimonialsData.length;
+      // const testimonialItems = document.querySelectorAll('.testimonial-item');
+
+      // const showTestimonial = (index) => {
+      //   testimonialItems.forEach((testimonial, i) => {
+      //     testimonial.classList.add('hidden');
+      //   });
+      //   testimonialItems[index].classList.remove('hidden');
+      // };
+
+      // document.getElementById('nextBtn').addEventListener('click', () => {
+      //   currentIndex = (currentIndex + 1) % totalTestimonials;
+      //   showTestimonial(currentIndex);
+      // });
+
+      // document.getElementById('prevBtn').addEventListener('click', () => {
+      //   currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+      //   showTestimonial(currentIndex);
+      // });
+
+      // showTestimonial(currentIndex);
+      
+      // setInterval(() => {
+      //   currentIndex = (currentIndex + 1) % totalTestimonials;
+      //   showTestimonial(currentIndex);
+      // }, 4000);
+      
+      AOS.init();
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          const iconClose = document.getElementById("close-icon");
+          const iconHamburger = document.getElementById("hamburger-icon");
+          menu.classList.toggle("hidden");
+          iconClose.classList.toggle("hidden");
+          iconHamburger.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
